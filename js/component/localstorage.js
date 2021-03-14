@@ -4,3 +4,6 @@ export function set(name, value) {
 export function get(name, subst) {
     return JSON.parse(window.localStorage.getItem(name)||subst)
 }
+export function del(name){
+    return localStorage.removeItem(name);
+}
