@@ -1,5 +1,5 @@
-import {get} from './localstorage';
-import Keyboard from './component/Keyboard';
+import {get} from './component/localstorage.js';
+import Keyboard from './component/Keyboard.js';
 
 const rowsOrder = [
     ['Backquote', 'Digit1', 'Digit2', 'Digit3', 'Digit4', 'Digit5', 'Digit6', 'Digit7', 'Digit8', 'Digit9', 'Digit0', 'Minus', 'Equal', 'Delete'],
@@ -9,6 +9,6 @@ const rowsOrder = [
     ['ControlLeft', 'Win', 'AltLeft', 'Space', 'AltRight', 'ArrowLeft', 'ArrowDown', 'ArrowRight', 'ControlRight'],
   ];
 
-  const lang = get('kbLang', '"ru"');
+  const lang = get('kbLang', '"en"');
 
   new Keyboard(rowsOrder).init(lang).generateLayout()
